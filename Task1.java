@@ -6,12 +6,16 @@ public class Task1 {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
         FillArray(numbers, 10, 0, 20);
+
         System.out.println(numbers);
+
         int minEl = FindMinNumb(numbers);
         int maxEl = FindMaxNumb(numbers);
+
         double sumArray = SumElArray(numbers);
         double lengthAr = numbers.size();
         double aver = sumArray / lengthAr;
+        
         System.out.printf(" Минимальный элемент - %d;\n Максимальный элемент - %d;\n "
             + "Среднее арифметическое - %.1f\n", minEl, maxEl, aver);
         
