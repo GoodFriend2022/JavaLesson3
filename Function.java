@@ -32,4 +32,14 @@ public class Function {
         }
         return sum;
     }
+
+    static void DelEven(ArrayList<Integer> array) {
+        int count = 0;
+        while (count < array.size()) {
+            if (array.get(count) % 2 == 0) {
+                array.remove(count);
+            }
+            else count++;
+        }
+    }
 }
